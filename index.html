@@ -3,20 +3,44 @@
 <head>
 	<!-- This is a comment! Text here will be ignored by the browser. -->
 	<meta charset="UTF-8">
-	<title>Video Projects</title>
-	<link href="../myCSS.css" rel="stylesheet" type="text/css">
+	<title>Connor's Portfolio</title>
+	<link href="myCSS.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
 </head>
-<body>
+<body onLoad="MM_preloadImages('raster/home02.jpg','raster/audio02.jpg','raster/animation02.jpg','raster/video02.jpg')">
 <div class="container">
   <div class="header">
-  	<img src="../raster/VideoHeader.jpg">
-  </div>
+  	<img src="raster/HomeHeader.jpg">
+</div>
   <div class="nav">
-    <h3><a href="../index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Home','','../raster/home02.jpg',1)"><img src="../raster/home01.jpg" alt="Home" width="100" height="" id="Home"></a> <a href="../raster/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Raster','','../raster/raster02.jpg',1)"><img src="../raster/raster01.jpg" alt="Raster" width="100" height="" id="Raster"></a><a href="../vector/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Vector','','../raster/vector02.jpg',1)"><img src="../raster/vector01.jpg" alt="Vector" width="100" height="" id="Vector"></a><a href="../audio/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Audio','','../raster/audio02.jpg',1)"><img src="../raster/audio01.jpg" alt="Audio" width="100" height="" id="Audio"></a><a href="index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Animation','','../raster/animation02.jpg',1)"><img src="../raster/animation01.jpg" alt="Animation" width="100" height="" id="Animation"></a><a href="../video/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Video','','../raster/video02.jpg',1)"><img src="../raster/video01.jpg" alt="Video" width="100" height="" id="Video"></a>
+    <h3><a href="index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Home','','raster/home02.jpg',1)"><img src="raster/home01.jpg" alt="Home" width="100" height="" id="Home"></a><a href="raster/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Raster','','raster/raster02.jpg',1)"><img src="raster/raster01.jpg" alt="Raster" width="100" height="" id="Raster"></a><a href="vector/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Vector','','raster/vector02.jpg',1)"><img src="raster/vector01.jpg" alt="Vector" width="100" height="" id="Vector"></a><a href="audio/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Audio','','raster/audio02.jpg',1)"><img src="raster/audio01.jpg" alt="Audio" width="100" height="" id="Audio"></a><a href="animation/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Animation','','raster/animation02.jpg',1)"><img src="raster/animation01.jpg" alt="Animation" width="100" height="" id="Animation"></a><a href="video/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Video','','raster/video02.jpg',1)"><img src="raster/video01.jpg" alt="Video" width="100" height="" id="Video"></a>
   </div>
-  <div class="content">Hello World!</div>
+  <div class="content">
+	<br><img src="raster/HomepageGraphic.jpg"></br>
   <div class="footer">
-    <h4><a href="../aboutme.html">About Me</a> | <a href="mailto:consoelberg@gmail.com">Contact</a> | Copyright 2021</h4>
+    <h4><a href="aboutme.html">About Me</a> | <a href="mailto:consoelberg@gmail.com">Contact</a> | Copyright 2021</h4>
   </div>
 </div>
 </body>
