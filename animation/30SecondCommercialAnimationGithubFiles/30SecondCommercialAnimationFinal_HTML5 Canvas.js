@@ -1311,7 +1311,7 @@ if (reversed == null) { reversed = false; }
 	this.frame_0 = function() {
 		this.clearAllSoundStreams();
 		 
-		var soundInstance = playSound("_30SecondCommercialFinalwav.mp3",0);
+		var soundInstance = playSound("_30SecondCommercialFinalwav",0);
 		this.InsertIntoSoundStreamData(soundInstance,0,900,1);
 	}
 	this.frame_1410 = function() {
